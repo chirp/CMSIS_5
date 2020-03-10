@@ -110,11 +110,11 @@ else()
             )
 endif()
 
-if (${ARCH} MATCHES armv6m.*)
+if (${ARCH} MATCHES "armv6m.*")
     set(CHIRP_CMSIS_SRC ${CHIRP_CMSIS_SRC}
             CMSIS/DSP/Source/TransformFunctions/arm_bitreversal2.c
             )
-elseif(${ARCH} MATCHES armv7m.*)
+elseif(${ARCH} MATCHES "armv7m.*")
     set(CHIRP_CMSIS_SRC ${CHIRP_CMSIS_SRC}
             CMSIS/DSP/Source/TransformFunctions/arm_bitreversal2.S
             )
